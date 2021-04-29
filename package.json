@@ -31,8 +31,8 @@
   "scripts": {
     "build": "tsc -p .",
     "dev": "tsnd --respawn src/index.ts",
-    "lint": "eslint src/**/*.ts --no-ignore",
-    "lint:fix": "eslint src/**/*.ts --fix --no-ignore",
+    "lint": "eslint src/*.ts",
+    "lint:fix": "eslint src/*.ts --fix",
     "clean": "rimraf dist",
     "test": "jest",
     "test:watch": "jest --watch",

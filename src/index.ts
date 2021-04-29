@@ -1,1 +1,1 @@
-console.log("test1");
+export const test = "test";
