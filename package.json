@@ -1,0 +1,48 @@
+{
+  "name": "ts-npm-dev",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "bin": {
+    "ts-npm-dev": "dist/index.js"
+  },
+  "author": "hiro08gh",
+  "license": "MIT",
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "object-assign": "^4.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.3",
+    "@types/node": "14.0.14",
+    "@typescript-eslint/eslint-plugin": "3.5.0",
+    "@typescript-eslint/parser": "3.5.0",
+    "eslint": "7.3.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "husky": "4.2.5",
+    "jest": "26.1.0",
+    "prettier": "2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "26.1.1",
+    "typescript": "3.9.6"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "eslint src/**/*.ts --no-ignore",
+    "lint:fix": "eslint src/**/*.ts --fix --no-ignore",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "description": "State management library based on Flux architecture.",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": []
+}
